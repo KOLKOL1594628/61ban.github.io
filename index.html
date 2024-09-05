@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Longin</title>
+    <link rel="stylesheet" href="css/system.css"/>
+
+</head>
+<body>
+    <div class="box">
+        <h2>Longin</h2>
+        <div class="input-box">
+            <label>账号</label>
+            <input type="text" id="myInput" placeholder="账号">
+        </div>
+        <div class="input-box">
+            <label>密码</label>
+            <input type="password" id="Input" placeholder="密码">
+        </div>
+        <div class="btn-box">
+            <a href="#">忘记密码?</a>
+            <div>
+            <button onclick="validateInputs()">登录</button>
+            <button>注册</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function validateInputs() {
+        var myInput = document.getElementById('myInput').value;
+        var Input =document.getElementById('Input').value;
+        var isValid = (myInput == "gxc")
+        var isValid = (Input == "123456")
+        if (!isValid) { // 如果输入不匹配或未通过验证，显示错误信息
+            // 可以自定义错误信息内容
+            alert('输入错误，需要输入'); 
+        } else {
+            // 如果两个输入都正确，可以执行其他操作，例如提交表单等。
+            // 这里可以添加其他逻辑代码。
+            window.location.href = "gxc.html";
+            
+        }
+    }
+    </script>
+</body>
+
+
+
+</html>
